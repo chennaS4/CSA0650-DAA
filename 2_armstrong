@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int a,digit,sum=0,r;
+	printf("Chenna keasva reddy\n");
+	printf("192211806\n");
+	printf("Enter the number:");
+	scanf("%d",&a);
+	r=a;
+	while(a!=0)
+	{
+		digit=a%10;
+		sum+=digit*digit*digit;
+		a=a/10;
+	}
+	if(sum==r)
+	{
+		printf("Its a armstrong");
+	}
+	else
+	{
+		printf("Not armstrong");
+	}
+	return 0;
+}
